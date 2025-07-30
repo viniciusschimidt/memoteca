@@ -1,27 +1,140 @@
-# Memoteca
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
+# 🧠✨ Memoteca - Suas lembranças em um só lugar
 
-## Development server
+**Memoteca** é uma aplicação desenvolvida com **Angular 17**, que permite armazenar, visualizar, editar e excluir lembranças pessoais. É como um mural digital onde você pode guardar momentos especiais da sua vida.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este projeto foi construído com foco em boas práticas de **componentização**, **comunicação com o backend**, **responsividade** e **acessibilidade**.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🌐 Acesse o projeto 
 
-## Build
+🔗 [Repositório oficial no GitHub](https://github.com/viniciusschimidt/memoteca)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## 📸 Funcionalidades
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- 📌 Cadastrar novas lembranças com título, descrição e imagem
+- 📂 Listar todas as lembranças salvas
+- ✏️ Editar informações de uma lembrança existente
+- ❌ Excluir uma lembrança
+- 🔄 Comunicação real com uma API REST fake usando **JSON Server**
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🚀 Tecnologias utilizadas
 
-## Further help
+- **Angular 17**
+- **TypeScript**
+- **RxJS / Observables**
+- **JSON Server (Fake API REST)**
+- **HTML5 + CSS3**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+## ⚙️ Como rodar o projeto localmente
+
+### 🔽 Pré-requisitos
+
+Antes de iniciar, você precisa ter instalado:
+
+- Node.js (v16+)
+- Angular CLI (`npm install -g @angular/cli`)
+- Git
+
+---
+
+### 🧪 1. Clone o repositório
+
+```bash
+git clone https://github.com/viniciusschimidt/memoteca.git
+cd memoteca
+```
+
+---
+
+### 📦 2. Instale as dependências
+
+```bash
+npm install
+```
+
+---
+
+### 🌐 3. Inicie a API simulada (JSON Server)
+
+A aplicação usa uma API fake para simular requisições HTTP com dados persistentes:
+
+```bash
+npx json-server --watch backend/db.json --port 3000
+```
+
+A API ficará disponível em:  
+📍 `http://localhost:3000/pensamentos`
+
+---
+
+### ▶️ 4. Rode o Angular
+
+Com a API rodando, inicie o servidor Angular:
+
+```bash
+ng serve
+```
+
+Abra no navegador:  
+📍 `http://localhost:4200`
+
+---
+
+## 📁 Estrutura do projeto
+
+```bash
+memoteca/
+├── backend/
+│   └── db.json                   # Base de dados fake da API
+├── node_modules/
+├── src/
+│   ├── app/
+│   │   ├── componentes/
+│   │   │   ├── cabecalho/
+│   │   │   ├── pensamentos/
+│   │   │   └── rodape/
+│   │   ├── app-routing.module.ts
+│   │   ├── app.component.css
+│   │   ├── app.component.html
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   └── app.module.ts
+│   ├── assets/
+│   └── environments/
+└── angular.json
+```
+
+
+
+## ✅ Status do projeto
+
+🟢 **Concluído e funcional**  
+🛠️ Em evolução com novas features planejadas
+
+---
+
+## 🤝 Contribuição
+
+Contribuições são muito bem-vindas!  
+Se quiser sugerir melhorias, abrir issues ou fazer um fork, fique à vontade! 💙
+
+---
+
+## 📬 Contato
+
+Feito com dedicação por **Vinicius Schimidt**  
+🔗 GitHub: [@viniciusschimidt](https://github.com/viniciusschimidt)  
+🔗 LinkedIn: [linkedin.com/in/viniciusschimidt](https://linkedin.com)  
+📧 Email: viniciusschimidt183@gmail.com
+
+---
+
+> *“Guardar memórias é uma forma de viver mais de uma vez.”* – Memoteca 💭
